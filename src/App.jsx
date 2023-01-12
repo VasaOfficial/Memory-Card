@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import MemoryGame from "./components/Cards/Cards";
+import MemoryGame from "./components/ScoreBoard/Score";
+import Cards from "./components/Cards/Cards";
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
@@ -8,6 +9,7 @@ function App() {
   return (
     <div>
       <MemoryGame currentScore={currentScore} bestScore={bestScore} />
+      <Cards />
     </div>
   );
 }
