@@ -5,9 +5,9 @@
 
 * HOW TO PLAY
 
-  1. Click on a card and remeber it.
-  2. Order of cards will change so you need to pick a card that you didn't choose previously.
-  3. When you get all six of them you win.
+  - Click on a card and remeber it.
+  - Order of cards will change so you need to pick a card that you didn't choose previously.
+  - When you get all six of them you win.
 
 * NOTE
 
