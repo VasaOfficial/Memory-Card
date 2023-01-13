@@ -1,5 +1,6 @@
 import { cardStorage } from "./CardsStorage";
 import React, { useState } from "react";
+import "./cards.css";
 
 // Card Shuffling
 const Cards = (props) => {
@@ -14,9 +15,9 @@ const Cards = (props) => {
   }
 
   return (
-    <div>
+    <div className="cards-container">
       {shuffledCards.map((card) => (
-        <div key={card.id}>
+        <div className="card" key={card.id}>
           <img
             src={card.img}
             alt={card.text}
