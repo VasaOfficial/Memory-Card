@@ -1,6 +1,6 @@
 import React from "react";
 
-const MemoryGame = ({ currentScore, bestScore }) => {
+const ScoreBoard = ({ currentScore, bestScore }) => {
   return (
     <>
       <>
@@ -14,4 +14,4 @@ const MemoryGame = ({ currentScore, bestScore }) => {
   );
 };
 
-export default MemoryGame;
+export default ScoreBoard;

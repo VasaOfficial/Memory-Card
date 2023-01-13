@@ -1,7 +1,8 @@
 import { cardStorage } from "./CardsStorage";
 import React, { useState } from "react";
 
-const Cards = () => {
+// Card Shuffling
+const Cards = (props) => {
   const [shuffledCards, setShuffledCards] = useState(shuffle(cardStorage));
 
   function shuffle(array) {
@@ -12,15 +13,15 @@ const Cards = () => {
     return array;
   }
 
-  const handleClick = () => {
-    setShuffledCards(shuffle([...shuffledCards]));
-  };
-
   return (
     <div>
       {shuffledCards.map((card) => (
         <div key={card.id}>
-          <img src={card.img} alt={card.text} onClick={handleClick} />
+          <img
+            src={card.img}
+            alt={card.text}
+            onClick={() => props.onCardClick(card.id)}
+          />
           <p>{card.text}</p>
         </div>
       ))}
